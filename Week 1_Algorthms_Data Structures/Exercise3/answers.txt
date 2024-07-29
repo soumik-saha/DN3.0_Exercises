@@ -1,0 +1,33 @@
+Exercise 3: Sorting Customer Orders
+
+1. Understand Sorting Algorithms:
+   - Explain different sorting algorithms (Bubble Sort, Insertion Sort, Quick Sort, Merge Sort).
+     Answer:
+     - Bubble Sort: A simple comparison-based algorithm where adjacent elements are swapped if they are in the wrong order. Time complexity is O(n^2).
+     - Insertion Sort: Builds the final sorted array one item at a time by inserting elements into their correct position. Time complexity is O(n^2).
+     - Quick Sort: A divide-and-conquer algorithm that selects a 'pivot' and partitions the array into elements less than and greater than the pivot. Time complexity is O(n log n) on average.
+     - Merge Sort: A divide-and-conquer algorithm that splits the array into halves, recursively sorts them, and then merges them. Time complexity is O(n log n).
+
+2. Setup:
+   - Create a class Order with attributes like orderId, customerName, and totalPrice.
+     Answer:
+     The `Order` class is created with attributes `orderId`, `customerName`, and `totalPrice` to represent orders in the e-commerce platform.
+
+3. Implementation:
+   - Implement Bubble Sort to sort orders by totalPrice.
+     Answer:
+     Bubble Sort is implemented in `BubbleSort.java`, which sorts the orders in ascending order of `totalPrice`.
+
+   - Implement Quick Sort to sort orders by totalPrice.
+     Answer:
+     Quick Sort is implemented in `QuickSort.java`, which efficiently sorts the orders by `totalPrice`.
+
+4. Analysis:
+   - Compare the performance (time complexity) of Bubble Sort and Quick Sort.
+     Answer:
+     - Bubble Sort has a time complexity of O(n^2), which is less efficient for large datasets.
+     - Quick Sort has a time complexity of O(n log n) on average, making it more suitable for larger datasets.
+
+   - Discuss why Quick Sort is generally preferred over Bubble Sort.
+     Answer:
+     Quick Sort is generally preferred because of its better average-case time complexity of O(n log n), compared to Bubble Sort's O(n^2). This makes Quick Sort more efficient for larger datasets and practical in real-world applications.

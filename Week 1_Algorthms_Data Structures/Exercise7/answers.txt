@@ -1,0 +1,25 @@
+Exercise 7: Financial Forecasting
+
+1. Understand FinancialForecastingRecursive Algorithms:
+   - Explain the concept of recursion and how it can simplify certain problems.
+     Answer:
+     Recursion is a method where a function calls itself to solve smaller instances of the same problem. It can simplify problems by breaking them down into base cases and recursive cases, making the logic easier to follow.
+
+2. Setup:
+   - Create a method to calculate the future value using a recursive approach.
+     Answer:
+     The `predictFutureValue` method is created to calculate the future value recursively based on the current value, growth rate, and number of years.
+
+3. Implementation:
+   - Implement a recursive algorithm to predict future values based on past growth rates.
+     Answer:
+     A recursive algorithm is implemented in `FinancialForecasting.java` to predict future values, where each call calculates the future value for one year.
+
+4. Analysis:
+   - Discuss the time complexity of your recursive algorithm.
+     Answer:
+     The time complexity of the recursive algorithm is O(n), where n is the number of years. This is because each recursive call decreases the number of years by one until reaching the base case.
+
+   - Explain how to optimize the recursive solution to avoid excessive computation.
+     Answer:
+     To optimize the recursive solution and avoid excessive computation, memoization can be used to store previously calculated results. Alternatively, an iterative approach can be implemented to achieve the same result without the overhead of recursive calls.
