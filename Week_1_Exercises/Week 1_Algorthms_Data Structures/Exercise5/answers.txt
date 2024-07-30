@@ -1,0 +1,29 @@
+Exercise 5: Task Management System
+
+1. Understand Linked Lists:
+   - Explain the different types of linked lists (Singly Linked List, Doubly Linked List).
+     Answer:
+     - Singly Linked List: A linked list where each node points to the next node in the sequence. It allows efficient insertions and deletions but only provides unidirectional traversal.
+     - Doubly Linked List: A linked list where each node points to both the next and previous nodes. It supports bidirectional traversal and can be more efficient for certain operations, but uses more memory.
+
+2. Setup:
+   - Create a class Task with attributes like taskId, taskName, and status.
+     Answer:
+     The `Task` class is created with attributes `taskId`, `taskName`, and `status` to represent tasks in the management system.
+
+3. Implementation:
+   - Implement a singly linked list to manage tasks.
+     Answer:
+     A singly linked list is implemented in `SinglyLinkedList.java` to manage tasks, supporting operations such as add, search, traverse, and delete.
+
+4. Analysis:
+   - Analyze the time complexity of each operation.
+     Answer:
+     - Add Operation: O(n) in the worst case if adding at the end of the list.
+     - Search Operation: O(n) as it involves traversing the list.
+     - Traverse Operation: O(n) as it requires iterating through all nodes.
+     - Delete Operation: O(n) in the worst case if deleting from the end.
+
+   - Discuss the advantages of linked lists over arrays for dynamic data.
+     Answer:
+     Linked lists offer advantages such as dynamic size, efficient insertions and deletions at both ends, and reduced memory waste compared to arrays. They are particularly useful when the number of elements changes frequently.

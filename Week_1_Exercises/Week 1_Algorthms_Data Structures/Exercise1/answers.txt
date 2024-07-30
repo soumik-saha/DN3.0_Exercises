@@ -1,0 +1,48 @@
+Exercise 1: Inventory Management System
+
+1. Understand the Problem:
+   - Explain why data structures and algorithms are essential in handling large inventories.
+     Answer:
+     Data structures and algorithms are crucial for handling large inventories due to the need for efficient data storage, retrieval, and manipulation. Efficient data structures enable quick access and modifications, ensuring that the system can handle large amounts of data without performance degradation. Algorithms are used to optimize operations such as searching, updating, and deleting items, which helps maintain system responsiveness and efficiency.
+
+   - Discuss the types of data structures suitable for this problem.
+     Answer:
+     The suitable data structures for managing inventory include:
+     - ArrayList: Useful for scenarios where elements are accessed by index and where dynamic resizing is required. However, searching and updating elements can be less efficient.
+     - HashMap: Ideal for scenarios requiring fast lookups by a key (e.g., productId). It provides average O(1) time complexity for add, update, and delete operations, making it highly efficient for managing large inventories.
+
+2. Setup:
+   - Create a new project for the inventory management system.
+     Answer:
+     To set up the project, create a new project directory in your IDE and configure it with the necessary build tools (e.g., Maven, Gradle). Create a package structure that includes directories for source code and other resources. Ensure you have the necessary classes and methods to support the functionality of the inventory management system.
+
+3. Implementation:
+   - Define a class Product with attributes like productId, productName, quantity, and price.
+     Answer:
+     The `Product` class should include the following attributes: `productId`, `productName`, `quantity`, and `price`. The class should have a constructor to initialize these attributes and getter and setter methods for accessing and modifying them.
+
+   - Choose an appropriate data structure to store the products (e.g., ArrayList, HashMap).
+     Answer:
+     A `HashMap` is chosen for storing products, where the key is the `productId` and the value is the `Product` object. This allows for efficient lookups, updates, and deletions with an average time complexity of O(1).
+
+   - Implement methods to add, update, and delete products from the inventory.
+     Answer:
+     Implement methods to handle adding, updating, and deleting products:
+     - `addProduct(Product product)`: Adds a product to the inventory.
+     - `updateProduct(int productId, Product updatedProduct)`: Updates an existing product based on its `productId`.
+     - `deleteProduct(int productId)`: Removes a product from the inventory by its `productId`.
+
+4. Analysis:
+   - Analyze the time complexity of each operation (add, update, delete) in your chosen data structure.
+     Answer:
+     For a `HashMap`:
+     - Add Operation: O(1) on average due to efficient hashing.
+     - Update Operation: O(1) on average if the product exists; otherwise, it may involve an insertion.
+     - Delete Operation: O(1) on average assuming the product exists.
+
+   - Discuss how you can optimize these operations.
+     Answer:
+     To optimize operations:
+     - Ensure proper hashing to minimize collisions and maintain the efficiency of `HashMap`.
+     - Use efficient algorithms and data handling techniques to reduce overhead during bulk operations.
+     - Implement caching mechanisms to speed up frequent access patterns and reduce the need for repetitive lookups.
