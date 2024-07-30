@@ -1,0 +1,32 @@
+Exercise 6: Library Management System
+
+1. Understand Search Algorithms:
+   - Explain linear search and binary search algorithms.
+     Answer:
+     - Linear Search: A straightforward search algorithm that checks each element sequentially until the target is found or the end of the list is reached. Time complexity is O(n).
+     - Binary Search: An efficient search algorithm that works on sorted arrays by dividing the search interval in half. Time complexity is O(log n).
+
+2. Setup:
+   - Create a class Book with attributes like bookId, title, and author.
+     Answer:
+     The `Book` class is created with attributes `bookId`, `title`, and `author` to represent books in the library system.
+
+3. Implementation:
+   - Implement linear search to find books by title.
+     Answer:
+     Linear search is implemented in `LinearSearch.java`, which sequentially searches for a book by its title.
+
+   - Implement binary search to find books by title (assuming the list is sorted).
+     Answer:
+     Binary search is implemented in `BinarySearch.java`, which efficiently searches for a book by its title in a sorted array.
+
+4. Analysis:
+   - Compare the time complexity of linear and binary search.
+     Answer:
+     - Linear Search: O(n) as it scans each element.
+     - Binary Search: O(log n) as it repeatedly divides the search space in half.
+
+   - Discuss when to use each algorithm based on the data set size and order.
+     Answer:
+     - Linear Search: Suitable for small or unsorted datasets where simplicity is needed.
+     - Binary Search: Ideal for larger and sorted datasets due to its logarithmic time complexity, providing faster search times.

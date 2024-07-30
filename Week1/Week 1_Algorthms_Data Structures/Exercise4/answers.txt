@@ -1,0 +1,32 @@
+Exercise 4: Employee Management System
+
+1. Understand Array Representation:
+   - Explain how arrays are represented in memory and their advantages.
+     Answer:
+     Arrays are stored in contiguous memory locations, which allows for efficient access using indices. The primary advantages include constant-time access (O(1)) and simplicity. Arrays are suitable for situations where the number of elements is known and fixed.
+
+2. Setup:
+   - Create a class Employee with attributes like employeeId, name, position, and salary.
+     Answer:
+     The `Employee` class is created with attributes `employeeId`, `name`, `position`, and `salary` to represent employee records.
+
+3. Implementation:
+   - Use an array to store employee records.
+     Answer:
+     An array is used in `EmployeeManagementSystem.java` to store and manage employee records.
+
+   - Implement methods to add, search, traverse, and delete employees in the array.
+     Answer:
+     Methods are implemented to handle adding, searching, traversing, and deleting employee records efficiently.
+
+4. Analysis:
+   - Analyze the time complexity of each operation (add, search, traverse, delete).
+     Answer:
+     - Add Operation: O(1) if there is space in the array.
+     - Search Operation: O(n) as it requires scanning through the array.
+     - Traverse Operation: O(n) as it involves iterating through the array.
+     - Delete Operation: O(n) due to shifting elements to fill the gap.
+
+   - Discuss the limitations of arrays and when to use them.
+     Answer:
+     Arrays have limitations such as fixed size and costly operations for insertion and deletion. They are best used when the size is known in advance and operations are mainly focused on accessing elements by index.
