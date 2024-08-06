@@ -1,0 +1,18 @@
+DELIMITER /
+/
+
+CREATE PROCEDURE UPDATEEMPLOYEEBONUS(
+    IN DEPARTMENT_NAME VARCHAR(100),
+    IN BONUS_PERCENTAGE DECIMAL(5, 2)
+)
+BEGIN
+ 
+    -- Update the salary by adding the bonus percentage
+    UPDATE EMPLOYEES
+    SET
+        SALARY = SALARY + (
+            SALARY * BONUS_PERCENTAGE / 100
+        )
+    WHERE
+        DEPARTMENT = DEPARTMENT_NAME;
+END // DELIMITER;
