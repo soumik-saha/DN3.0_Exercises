@@ -1,0 +1,43 @@
+Exercise 2: E-commerce Platform Search Function
+
+1. Understand Asymptotic Notation:
+   - Explain Big O notation and how it helps in analyzing algorithms.
+     Answer:
+     Big O notation is a mathematical representation used to describe the upper bound of an algorithm's time complexity. It provides an asymptotic analysis of the algorithm's performance as the input size grows. This helps in understanding how the algorithm's run time increases with larger inputs, allowing us to compare the efficiency of different algorithms.
+
+   - Describe the best, average, and worst-case scenarios for search operations.
+     Answer:
+     Linear Search:
+     - Best Case: O(1) when the target element is at the beginning of the array.
+     - Average Case: O(n) when the target element is somewhere in the middle.
+     - Worst Case: O(n) when the target element is at the end or not present.
+
+     Binary Search:
+     - Best Case: O(1) when the target element is at the middle of the sorted array.
+     - Average Case: O(log n) as the search space is halved with each iteration.
+     - Worst Case: O(log n) when the element is not present, requiring a full traversal of the search space.
+
+2. Setup:
+   - Create a class Product with attributes for searching, such as productId, productName, and category.
+     Answer:
+     The `Product` class is defined with attributes `productId`, `productName`, and `category` to represent products in the e-commerce platform. This allows for storing and accessing necessary product information during searches.
+
+3. Implementation:
+   - Implement linear search and binary search algorithms.
+     Answer:
+     - Linear Search: A simple search algorithm that checks each element in the array sequentially until the target element is found or the end of the array is reached.
+     - Binary Search: An efficient search algorithm that works on sorted arrays by repeatedly dividing the search interval in half, reducing the time complexity to O(log n).
+
+   - Store products in an array for linear search and a sorted array for binary search.
+     Answer:
+     Products are stored in a regular array for linear search, and a sorted array is used for binary search to ensure the algorithm operates efficiently.
+
+4. Analysis:
+   - Compare the time complexity of linear and binary search algorithms.
+     Answer:
+     - Linear Search has a time complexity of O(n) for both average and worst cases, as it requires checking each element.
+     - Binary Search has a time complexity of O(log n) for both average and worst cases, which is significantly more efficient for large datasets, provided the array is sorted.
+
+   - Discuss which algorithm is more suitable for your platform and why.
+     Answer:
+     Binary Search is more suitable for an e-commerce platform due to its efficiency in handling large datasets with O(log n) time complexity. However, it requires the data to be sorted. For small datasets or unsorted data, Linear Search may still be practical but generally less efficient.
